@@ -7,6 +7,7 @@ const lesson = [
 ];
 
 // ========= 11o =========
+console.log('--------------11o------------');
 for (let i = 0; i < lesson.length; i++) {
 
   if (lesson[i] === 'search') {
@@ -16,6 +17,7 @@ for (let i = 0; i < lesson.length; i++) {
 }
 
 // ========= 11p =========
+console.log('-------------11p---------')
 for (let i = 0; i < lesson.length; i++) {
   if (lesson[i] != 'search') {
     console.log('-1');
@@ -23,6 +25,7 @@ for (let i = 0; i < lesson.length; i++) {
 }
 
  // ========= 11q =========
+ console.log('-----------11q-----------');
 function findIndex(array, word) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === word) {
@@ -32,11 +35,45 @@ function findIndex(array, word) {
   return -1;
 }
 
+
 console.log(findIndex(['green', 'red', 'yellow', 'red'], 'red'));
 console.log(findIndex(['green','yellow'], 'red'));
 
+
+// =============== 11w =============
+console.log('--------------11w------------');
+
+function tampilkanTidakTerduplikasi(arr) {
+  var hasil = [];
+  var duplikat = [];
+
+  for (var i = 0; i < arr.length; i++) {
+      var elemen = arr[i];
+
+      if (duplikat.indexOf(elemen) === -1) {
+          if (arr.indexOf(elemen, i + 1) === -1) {
+              hasil.push(elemen);
+          } else {
+              duplikat.push(elemen);
+          }
+      }
+  }
+
+  return hasil;
+}
+
+// Contoh penggunaan
+var arrayInput = ['green', 'red', 'yellow', 'red'];
+var hasilOutput = tampilkanTidakTerduplikasi(arrayInput);
+console.log(hasilOutput);
+
+
+
+
+
 // =========== 11r =========
 
+console.log('--------------11r------------');
 const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
 function removeEgg(foods) {
   const result = [];
@@ -58,6 +95,7 @@ console.log(foods);
 
 
 // ============ 11u =================
+console.log('--------------11u------------');
 const weapons = ['katars', 'cannon', 'katars', 'sword', 'orb', 'katars']
 
 function removeKatars () {
@@ -80,6 +118,7 @@ console.log(weapons);
 
 // =============== 11v =================
 
+console.log('--------------11v------------');
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 function fizzBuzz () {
