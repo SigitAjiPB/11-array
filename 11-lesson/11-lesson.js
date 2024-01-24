@@ -37,6 +37,7 @@ console.log(findIndex(['green','yellow'], 'red'));
 
 // =========== 11r =========
 
+const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
 function removeEgg(foods) {
   const result = [];
   const reversedFoods = foods.reverse();
@@ -52,4 +53,51 @@ function removeEgg(foods) {
   return result.reverse();
 }
 
-console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+console.log(removeEgg(foods));
+console.log(foods);
+
+
+// ============ 11u =================
+const weapons = ['katars', 'cannon', 'katars', 'sword', 'orb', 'katars']
+
+function removeKatars () {
+  const result = [];
+  const reversedWeapons = weapons.reverse();
+  let findKatars = 0;
+
+  for(let i = 0; i < weapons.length; i++) {
+    if (weapons[i] === 'katars' && findKatars < 2) {
+      findKatars++
+      continue;
+    }
+    result.push(reversedWeapons[i]);
+  }
+  return result.reverse();
+}
+
+console.log(removeKatars(weapons));
+console.log(weapons);
+
+// =============== 11v =================
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+function fizzBuzz () {
+  const result = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 5 === 0 && nums[i] % 3 === 0) {
+      nums[i] = 'FizzBuzz'
+    } else if (nums[i] % 5 === 0) {
+      nums[i] = 'Buzz';
+    } else if (nums[i] % 3 === 0) {
+      nums[i] = 'Buzz'
+    }
+    result.push(nums[i]);
+  }
+  return result;
+}
+
+console.log(fizzBuzz());
+
+
