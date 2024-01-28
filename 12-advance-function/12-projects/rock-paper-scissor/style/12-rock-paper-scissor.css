@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tittle {
+  font-size:30px;
+  font-weight: bold;
+
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-btn {
+  background-color:rgb(25, 25, 25) ;
+  border: solid white;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+
+}
+
+.js-result {
+  font-size: 50px;
+
+}
+
+.js-score {
+  margin: 60px 0px 0px 0px;
+
+}
+
+.reset-btn, 
+.auto-play-button{
+  border: none;
+  font-size: 20px;
+  margin: 60px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 15px;
+}
+
