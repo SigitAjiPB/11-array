@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="tittle">12 Lessons</title>
+  <style>
+    .start-btn {
+      background-color: wheat;
+    }
+
+    .hidden {
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="start-btn">Start</button>
+
+
+  <button class="add-btn">Add to cart</button>
+
+
+  <button class="addd-btn" onclick="
+  notif++;
+  displayNotification();
+  ">Add</button>
+
+
+  <button class="remove-btn" onclick="
+  if(notif > 0) {
+    notif--;
+    if ( notif === 0 ) {
+      stopNotification();
+    }
+  }
+  ">Remove</button>
+
+
+  <p class="message-text"></p>
+  <script src="./12-lesson.js"></script>
+</body>
+</html>
